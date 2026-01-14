@@ -19,7 +19,7 @@ pipeline{
         bat 'docker build -t company-1website .'
       }
     }
-    stage('Run Docker Container){
+    stage('Run Docker Container'){
           steps{
             echo 'Running Docker container'
             bat 'docker run -d -p 8070:80 company-1website'
